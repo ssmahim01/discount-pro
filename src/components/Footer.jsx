@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-base-200 text-base-content rounded p-8">
+    <footer className="footer footer-center bg-base-300 text-base-content rounded p-8">
       <nav className="md:grid md:grid-flow-col flex flex-wrap justify-center items-center gap-6">
         <Link to="/">
           <div className="flex gap-2 items-center">
@@ -70,7 +70,7 @@ const Footer = () => {
       </nav>
       <aside>
         <p className="text-gray-700 font-medium">
-          Copyright © {new Date().getFullYear()} - All right reserved by Discount Pro
+          Copyright © {new Date().getFullYear()} - All right reserved by Discount PRO
         </p>
       </aside>
     </footer>

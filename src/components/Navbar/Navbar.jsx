@@ -18,7 +18,7 @@ const Navbar = () => {
     </>
 
   return (
-    <div className="navbar bg-base-200 py-4 lg:px-10">
+    <div className="navbar py-4 lg:px-10">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const Navbar = () => {
         </div>
         <div className="md:text-2xl font-bold flex items-center gap-2">
             <img className="w-14 border border-gray-200 shadow-md rounded-lg" src={logoImg} alt="Logo" />
-             <span className="hidden md:block">Discount Pro</span></div>
+             <span className="hidden md:block">Discount PRO</span></div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 *:font-bold *:ml-5">
