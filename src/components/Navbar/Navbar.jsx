@@ -2,6 +2,7 @@ import { FaDev, FaHome, FaUser } from "react-icons/fa";
 import { MdBrandingWatermark } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import logoImg from "/src/assets/discount.png";
+import "./Navbar.css";
 
 const Navbar = () => {
     const routeLinks = <>

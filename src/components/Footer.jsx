@@ -2,36 +2,36 @@ import { FaDev, FaHome, FaInstagram, FaUser, FaYoutube } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { MdBrandingWatermark } from "react-icons/md";
 import { SiFacebook } from "react-icons/si";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-base-200 text-base-content rounded p-10">
-      <nav className="grid grid-flow-col gap-4">
-        <NavLink to="/">
+    <footer className="footer footer-center bg-base-200 text-base-content rounded p-8">
+      <nav className="md:grid md:grid-flow-col flex flex-wrap justify-center items-center gap-6">
+        <Link to="/">
           <div className="flex gap-2 items-center">
             <FaHome className="text-lg" /> <span>Home</span>
           </div>
-        </NavLink>
+        </Link>
 
-        <NavLink to="/brands">
+        <Link to="/brands">
           <div className="flex gap-2 items-center">
             <MdBrandingWatermark className="text-lg" /> <span>Brands</span>
           </div>
-        </NavLink>
+        </Link>
 
-        <NavLink to="/myProfile">
+        <Link to="/myProfile">
           <div className="flex gap-2 items-center">
             <FaUser className="text-lg" /> <span>my-profile</span>
           </div>
-        </NavLink>
+        </Link>
 
-        <NavLink to="/aboutDev">
+        <Link to="/aboutDev">
           <div className="flex gap-2 items-center">
             <FaDev className="text-lg" />
             <span>About Dev</span>
           </div>
-        </NavLink>
+        </Link>
       </nav>
       <nav>
         <div className="grid grid-flow-col gap-4 *:hover:cursor-pointer">
@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </nav>
       <aside>
-        <p className="text-gray-600 font-medium">
+        <p className="text-gray-700 font-medium">
           Copyright © {new Date().getFullYear()} - All right reserved by Discount Pro
         </p>
       </aside>
