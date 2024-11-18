@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/Provider";
 
 const Login = () => {
-  const { loginWithGoogle, setUser } = useContext(AuthContext);
+  const { loginWithGoogle, setUser, loginWithEmailPassword } = useContext(AuthContext);
+
+  const location = useLocation();
   const navigate = useNavigate();
 
   const handleGoogleLogin = () => {
@@ -21,6 +23,26 @@ const Login = () => {
     })
   };
 
+  const handleLoginWithEmailPass = (e) => {
+    e.preventDefault();
+
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    loginWithEmailPassword(email, password)
+    .then(result => {
+      const user = result.user;
+      setUser(user);
+
+      navigate(location?.state ? location.state : "/");
+    })
+
+    .catch(error => {
+      alert("Login Failed");
+      console.log(error.message);
+    })
+  };
+
   return (
     <div className="flex justify-center items-center py-14">
       <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
@@ -28,7 +50,7 @@ const Login = () => {
           Login Form!
         </h2>
 
-        <form className="card-body">
+        <form onSubmit={handleLoginWithEmailPass} className="card-body">
           <div>
             <button
               onClick={handleGoogleLogin}
