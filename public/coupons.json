@@ -165,7 +165,7 @@
     "brand_name": "TravelEase",
     "rating": 4.4,
     "description": "Your partner for travel essentials and gear.",
-    "brand_logo": "https://example.com/logos/travelease.png",
+    "brand_logo": "https://i.ibb.co.com/yNT9FtW/travel-ease.jpg",
     "coupons": [
       {
         "coupon_code": "TRIP10",
@@ -217,7 +217,7 @@
     "brand_name": "PetCare",
     "rating": 3.5,
     "description": "High-quality products for your furry friends.",
-    "brand_logo": "https://example.com/logos/petcare.png",
+    "brand_logo": "https://i.ibb.co.com/tZLJ1Qc/pet-care.jpg",
     "coupons": [
       {
         "coupon_code": "PET10",
@@ -236,7 +236,7 @@
     "brand_name": "GreenGrocers",
     "rating": 4.1,
     "description": "Organic groceries and eco-friendly products.",
-    "brand_logo": "https://example.com/logos/greengrocers.png",
+    "brand_logo": "https://i.ibb.co.com/JdXBDz7/green-grocers.png",
     "coupons": [
       {
         "coupon_code": "ORGANIC15",
@@ -255,7 +255,7 @@
     "brand_name": "AutoPartsPro",
     "rating": 3.7,
     "description": "Reliable auto parts and accessories for all vehicles.",
-    "brand_logo": "https://example.com/logos/autopartspro.png",
+    "brand_logo": "https://i.ibb.co.com/z5DwbD4/auto-parts-pro.png",
     "coupons": [
       {
         "coupon_code": "CARCARE10",

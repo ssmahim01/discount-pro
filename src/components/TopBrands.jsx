@@ -1,9 +1,9 @@
 import Marquee from "react-fast-marquee";
-import { Link, NavLink, useLoaderData } from "react-router-dom";
+import { NavLink, useLoaderData } from "react-router-dom";
 import SaleBrands from "./SaleBrands";
 
 const TopBrands = () => {
- const brands = useLoaderData();
+  const brands = useLoaderData();
 
   return (
     <div className="md:w-4/5 w-11/12 mx-auto">
@@ -21,7 +21,7 @@ const TopBrands = () => {
               <figure key={brand._id}>
                 <NavLink to={`/brand/${brand._id}`} className="*:ml-8">
                   <img
-                    className="w-14 h-14 rounded-xl"
+                    className="w-14 h-12 rounded-xl"
                     src={brand.brand_logo}
                     alt={brand.brand_name}
                   />

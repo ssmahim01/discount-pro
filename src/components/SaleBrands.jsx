@@ -6,7 +6,7 @@ const SaleBrands = () => {
   const location = useLocation();
 
   return (
-    <div className="w-11/12 mx-auto pt-10">
+    <div className="w-full mx-auto pt-10">
         <h2 className="md:text-2xl text-xl text-gray-700 font-bold">
            {location.pathname === "/" ?  "Brands on Sell" : "The Brand On Sell"}
           </h2>
