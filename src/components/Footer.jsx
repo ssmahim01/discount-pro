@@ -3,11 +3,21 @@ import { FaGithub } from "react-icons/fa6";
 import { MdBrandingWatermark } from "react-icons/md";
 import { SiFacebook } from "react-icons/si";
 import { Link } from "react-router-dom";
+import logoImg from "../assets/discount.png";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-base-300 text-base-content rounded p-8">
+    <footer className="footer footer-center bg-base-300 text-base-content rounded p-10">
+
+      <section>
+      <div className="md:text-2xl font-bold flex items-center gap-2">
+            <img className="w-14 border border-gray-200 shadow-md rounded-lg" src={logoImg} alt="Logo" />
+             <span className="hidden md:block">Discount PRO</span>
+      </div>
+      </section>
+
       <nav className="md:grid md:grid-flow-col flex flex-wrap justify-center items-center gap-6">
+
         <Link to="/">
           <div className="flex gap-2 items-center">
             <FaHome className="text-lg" /> <span>Home</span>

@@ -1,206 +1,230 @@
 [
-    {
-      "_id": "1",
-      "brand_name": "TechMart",
-      "rating": 4.5,
-      "description": "Leading store for tech gadgets and accessories.",
-      "brand_logo": "https://example.com/logos/techmart.png",
-      "coupons": {
+  {
+    "_id": "1",
+    "brand_name": "TechMart",
+    "rating": 4.5,
+    "description": "Leading store for tech gadgets and accessories.",
+    "brand_logo": "https://example.com/logos/techmart.png",
+    "coupons": [
+      {
         "coupon_code": "TECH10",
         "description": "10% off on all electronics.",
         "expiry_date": "2024-12-31",
         "condition": "Minimum purchase of $50 required.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://techmart.com",
-      "category": "Electronics",
-      "isSaleOn": true
-    },
-    {
-      "_id": "2",
-      "brand_name": "FashionHub",
-      "rating": 4.8,
-      "description": "Trendy fashion apparel and accessories for all.",
-      "brand_logo": "https://example.com/logos/fashionhub.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://techmart.com",
+    "category": "Electronics",
+    "isSaleOn": true
+  },
+  {
+    "_id": "2",
+    "brand_name": "FashionHub",
+    "rating": 4.8,
+    "description": "Trendy fashion apparel and accessories for all.",
+    "brand_logo": "https://example.com/logos/fashionhub.png",
+    "coupons": [
+      {
         "coupon_code": "STYLE15",
         "description": "15% off on your first order.",
         "expiry_date": "2024-11-30",
         "condition": "Valid for new customers only.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://fashionhub.com",
-      "category": "Clothing",
-      "isSaleOn": true
-    },
-    {
-      "_id": "3",
-      "brand_name": "BookWorm",
-      "rating": 4.6,
-      "description": "Your go-to store for books and stationery.",
-      "brand_logo": "https://example.com/logos/bookworm.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://fashionhub.com",
+    "category": "Clothing",
+    "isSaleOn": true
+  },
+  {
+    "_id": "3",
+    "brand_name": "BookWorm",
+    "rating": 4.6,
+    "description": "Your go-to store for books and stationery.",
+    "brand_logo": "https://example.com/logos/bookworm.png",
+    "coupons": [
+      {
         "coupon_code": "READMORE",
         "description": "5% off on all book purchases.",
         "expiry_date": "2024-12-15",
         "condition": "Valid for orders above $20.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://bookworm.com",
-      "category": "Books & Stationery",
-      "isSaleOn": false
-    },
-    {
-      "_id": "4",
-      "brand_name": "GroceryStop",
-      "rating": 4.3,
-      "description": "Daily essentials delivered to your doorstep.",
-      "brand_logo": "https://example.com/logos/grocerystop.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://bookworm.com",
+    "category": "Books & Stationery",
+    "isSaleOn": false
+  },
+  {
+    "_id": "4",
+    "brand_name": "GroceryStop",
+    "rating": 4.3,
+    "description": "Daily essentials delivered to your doorstep.",
+    "brand_logo": "https://example.com/logos/grocerystop.png",
+    "coupons": [
+      {
         "coupon_code": "FRESH5",
         "description": "5% off on fresh produce.",
         "expiry_date": "2024-11-28",
         "condition": "Applicable on orders above $30.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://grocerystop.com",
-      "category": "Groceries",
-      "isSaleOn": true
-    },
-    {
-      "_id": "5",
-      "brand_name": "FitGear",
-      "rating": 4.7,
-      "description": "High-quality fitness equipment and apparel.",
-      "brand_logo": "https://example.com/logos/fitgear.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://grocerystop.com",
+    "category": "Groceries",
+    "isSaleOn": true
+  },
+  {
+    "_id": "5",
+    "brand_name": "FitGear",
+    "rating": 4.7,
+    "description": "High-quality fitness equipment and apparel.",
+    "brand_logo": "https://example.com/logos/fitgear.png",
+    "coupons": [
+      {
         "coupon_code": "GYM20",
         "description": "20% off on gym accessories.",
         "expiry_date": "2024-11-30",
         "condition": "Valid on select products only.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://fitgear.com",
-      "category": "Fitness",
-      "isSaleOn": true
-    },
-    {
-      "_id": "6",
-      "brand_name": "HomeDecor",
-      "rating": 4.2,
-      "description": "Elegant home decor items for every style.",
-      "brand_logo": "https://example.com/logos/homedecor.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://fitgear.com",
+    "category": "Fitness",
+    "isSaleOn": true
+  },
+  {
+    "_id": "6",
+    "brand_name": "HomeDecor",
+    "rating": 3.7,
+    "description": "Elegant home decor items for every style.",
+    "brand_logo": "https://example.com/logos/homedecor.png",
+    "coupons": [
+      {
         "coupon_code": "HOME15",
         "description": "15% off on home decor items.",
         "expiry_date": "2024-12-20",
         "condition": "Valid on orders above $50.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://homedecor.com",
-      "category": "Home & Living",
-      "isSaleOn": false
-    },
-    {
-      "_id": "7",
-      "brand_name": "GamerZone",
-      "rating": 4.9,
-      "description": "Top-rated gaming accessories and consoles.",
-      "brand_logo": "https://example.com/logos/gamerzone.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://homedecor.com",
+    "category": "Home & Living",
+    "isSaleOn": false
+  },
+  {
+    "_id": "7",
+    "brand_name": "GamerZone",
+    "rating": 4.9,
+    "description": "Top-rated gaming accessories and consoles.",
+    "brand_logo": "https://example.com/logos/gamerzone.png",
+    "coupons": [
+      {
         "coupon_code": "PLAY5",
         "description": "5% off on PlayStation accessories.",
         "expiry_date": "2024-12-31",
         "condition": "Valid on PlayStation products only.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://gamerzone.com",
-      "category": "Gaming",
-      "isSaleOn": true
-    },
-    {
-      "_id": "8",
-      "brand_name": "TravelEase",
-      "rating": 4.4,
-      "description": "Your partner for travel essentials and gear.",
-      "brand_logo": "https://example.com/logos/travelease.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://gamerzone.com",
+    "category": "Gaming",
+    "isSaleOn": true
+  },
+  {
+    "_id": "8",
+    "brand_name": "TravelEase",
+    "rating": 4.4,
+    "description": "Your partner for travel essentials and gear.",
+    "brand_logo": "https://example.com/logos/travelease.png",
+    "coupons": [
+      {
         "coupon_code": "TRIP10",
         "description": "10% off on travel backpacks.",
         "expiry_date": "2024-11-30",
         "condition": "Valid for orders above $50.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://travelease.com",
-      "category": "Travel",
-      "isSaleOn": true
-    },
-    {
-      "_id": "9",
-      "brand_name": "BeautyBox",
-      "rating": 4.5,
-      "description": "Luxurious beauty and skincare products.",
-      "brand_logo": "https://example.com/logos/beautybox.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://travelease.com",
+    "category": "Travel",
+    "isSaleOn": true
+  },
+  {
+    "_id": "9",
+    "brand_name": "BeautyBox",
+    "rating": 4.5,
+    "description": "Luxurious beauty and skincare products.",
+    "brand_logo": "https://example.com/logos/beautybox.png",
+    "coupons": [
+      {
         "coupon_code": "SKINCARE20",
         "description": "20% off on skincare items.",
         "expiry_date": "2024-12-31",
         "condition": "Valid on select brands.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://beautybox.com",
-      "category": "Beauty & Skincare",
-      "isSaleOn": true
-    },
-    {
-      "_id": "10",
-      "brand_name": "PetCare",
-      "rating": 4.3,
-      "description": "High-quality products for your furry friends.",
-      "brand_logo": "https://example.com/logos/petcare.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://beautybox.com",
+    "category": "Beauty & Skincare",
+    "isSaleOn": true
+  },
+  {
+    "_id": "10",
+    "brand_name": "PetCare",
+    "rating": 3.5,
+    "description": "High-quality products for your furry friends.",
+    "brand_logo": "https://example.com/logos/petcare.png",
+    "coupons": [
+      {
         "coupon_code": "PET10",
         "description": "10% off on pet food.",
         "expiry_date": "2024-12-20",
         "condition": "Minimum purchase of $30 required.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://petcare.com",
-      "category": "Pet Supplies",
-      "isSaleOn": false
-    },
-    {
-      "_id": "11",
-      "brand_name": "GreenGrocers",
-      "rating": 4.1,
-      "description": "Organic groceries and eco-friendly products.",
-      "brand_logo": "https://example.com/logos/greengrocers.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://petcare.com",
+    "category": "Pet Supplies",
+    "isSaleOn": false
+  },
+  {
+    "_id": "11",
+    "brand_name": "GreenGrocers",
+    "rating": 4.1,
+    "description": "Organic groceries and eco-friendly products.",
+    "brand_logo": "https://example.com/logos/greengrocers.png",
+    "coupons": [
+      {
         "coupon_code": "ORGANIC15",
         "description": "15% off on organic products.",
         "expiry_date": "2024-12-10",
         "condition": "Valid for orders above $40.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://greengrocers.com",
-      "category": "Groceries",
-      "isSaleOn": false
-    },
-    {
-      "_id": "12",
-      "brand_name": "AutoPartsPro",
-      "rating": 4.7,
-      "description": "Reliable auto parts and accessories for all vehicles.",
-      "brand_logo": "https://example.com/logos/autopartspro.png",
-      "coupons": {
+      }
+    ],
+    "shop_Link": "https://greengrocers.com",
+    "category": "Groceries",
+    "isSaleOn": false
+  },
+  {
+    "_id": "12",
+    "brand_name": "AutoPartsPro",
+    "rating": 3.7,
+    "description": "Reliable auto parts and accessories for all vehicles.",
+    "brand_logo": "https://example.com/logos/autopartspro.png",
+    "coupons": [
+      {
         "coupon_code": "CARCARE10",
         "description": "10% off on car care products.",
         "expiry_date": "2024-12-15",
         "condition": "Valid on orders above $20.",
         "coupon_type": "Percentage"
-      },
-      "shop_Link": "https://autopartspro.com",
-      "category": "Automotive",
-      "isSaleOn": true
-    }
-  ]  
+      }
+    ],
+    "shop_Link": "https://autopartspro.com",
+    "category": "Automotive",
+    "isSaleOn": true
+  }
+]
