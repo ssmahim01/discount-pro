@@ -8,6 +8,7 @@ import AuthenticationPage from "../pages/AuthenticationPage";
 import Login from "../pages/Login";
 import Registration from "../pages/Registration";
 import ErrorPage from "../ErrorElement/ErrorPage";
+import SaleBrands from "../components/SaleBrands";
 
 const router = createBrowserRouter([
     {
@@ -17,7 +18,13 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: ()=> fetch("/coupons.json")
+            },
+            {
+                path: "/brand/:id",
+                element: <SaleBrands></SaleBrands>,
+                loader: ()=> fetch("/coupons.json")
             },
             {
                 path: "/brands",

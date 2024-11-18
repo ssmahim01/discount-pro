@@ -4,7 +4,7 @@
     "brand_name": "TechMart",
     "rating": 4.5,
     "description": "Leading store for tech gadgets and accessories.",
-    "brand_logo": "https://example.com/logos/techmart.png",
+    "brand_logo": "https://i.ibb.co.com/dbBqytZ/techmart.png",
     "coupons": [
       {
         "coupon_code": "TECH10",
@@ -12,6 +12,13 @@
         "expiry_date": "2024-12-31",
         "condition": "Minimum purchase of $50 required.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREESHIP20",
+        "description": "Free shipping on all orders.",
+        "expiry_date": "2024-11-30",
+        "condition": "No minimum purchase required.",
+        "coupon_type": "Free Shipping"
       }
     ],
     "shop_Link": "https://techmart.com",
@@ -23,13 +30,20 @@
     "brand_name": "FashionHub",
     "rating": 4.8,
     "description": "Trendy fashion apparel and accessories for all.",
-    "brand_logo": "https://example.com/logos/fashionhub.png",
+    "brand_logo": "https://i.ibb.co.com/7vSxGZQ/fashion-hub.png",
     "coupons": [
       {
         "coupon_code": "STYLE15",
         "description": "15% off on your first order.",
         "expiry_date": "2024-11-30",
         "condition": "Valid for new customers only.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "WINTER20",
+        "description": "20% off on winter wear.",
+        "expiry_date": "2024-12-31",
+        "condition": "Applicable to winter wear only.",
         "coupon_type": "Percentage"
       }
     ],
@@ -42,7 +56,7 @@
     "brand_name": "BookWorm",
     "rating": 4.6,
     "description": "Your go-to store for books and stationery.",
-    "brand_logo": "https://example.com/logos/bookworm.png",
+    "brand_logo": "https://i.ibb.co.com/cD51PK0/bookworm.jpg",
     "coupons": [
       {
         "coupon_code": "READMORE",
@@ -54,14 +68,14 @@
     ],
     "shop_Link": "https://bookworm.com",
     "category": "Books & Stationery",
-    "isSaleOn": false
+    "isSaleOn": true
   },
   {
     "_id": "4",
-    "brand_name": "GroceryStop",
+    "brand_name": "GroceryStore",
     "rating": 4.3,
     "description": "Daily essentials delivered to your doorstep.",
-    "brand_logo": "https://example.com/logos/grocerystop.png",
+    "brand_logo": "https://i.ibb.co.com/QJKqrRV/grocery-store.jpg",
     "coupons": [
       {
         "coupon_code": "FRESH5",
@@ -71,16 +85,16 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://grocerystop.com",
+    "shop_Link": "https://grocerystore.com",
     "category": "Groceries",
     "isSaleOn": true
   },
   {
     "_id": "5",
-    "brand_name": "FitGear",
+    "brand_name": "FitGear Lagos",
     "rating": 4.7,
     "description": "High-quality fitness equipment and apparel.",
-    "brand_logo": "https://example.com/logos/fitgear.png",
+    "brand_logo": "https://i.ibb.co.com/SR1n4n9/fitgear-lagos.jpg",
     "coupons": [
       {
         "coupon_code": "GYM20",
@@ -88,9 +102,16 @@
         "expiry_date": "2024-11-30",
         "condition": "Valid on select products only.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREEBAG10",
+        "description": "Free gym bag with purchases over $100.",
+        "expiry_date": "2024-12-15",
+        "condition": "Order total must exceed $100.",
+        "coupon_type": "Free Gift"
       }
     ],
-    "shop_Link": "https://fitgear.com",
+    "shop_Link": "https://fitgear-lagos.com",
     "category": "Fitness",
     "isSaleOn": true
   },
@@ -99,7 +120,7 @@
     "brand_name": "HomeDecor",
     "rating": 3.7,
     "description": "Elegant home decor items for every style.",
-    "brand_logo": "https://example.com/logos/homedecor.png",
+    "brand_logo": "https://i.ibb.co.com/gD5SGRH/home-decor.png",
     "coupons": [
       {
         "coupon_code": "HOME15",
@@ -118,7 +139,7 @@
     "brand_name": "GamerZone",
     "rating": 4.9,
     "description": "Top-rated gaming accessories and consoles.",
-    "brand_logo": "https://example.com/logos/gamerzone.png",
+    "brand_logo": "https://i.ibb.co.com/54xPtxS/gamer-zone.jpg",
     "coupons": [
       {
         "coupon_code": "PLAY5",
@@ -126,6 +147,13 @@
         "expiry_date": "2024-12-31",
         "condition": "Valid on PlayStation products only.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREEGAME10",
+        "description": "Free game with Xbox console purchase.",
+        "expiry_date": "2024-12-15",
+        "condition": "Purchase any Xbox console.",
+        "coupon_type": "Free Gift"
       }
     ],
     "shop_Link": "https://gamerzone.com",
@@ -145,6 +173,13 @@
         "expiry_date": "2024-11-30",
         "condition": "Valid for orders above $50.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "LUGGAGE20",
+        "description": "20% off on luggage sets.",
+        "expiry_date": "2024-12-25",
+        "condition": "Applies to premium luggage sets only.",
+        "coupon_type": "Percentage"
       }
     ],
     "shop_Link": "https://travelease.com",
@@ -156,7 +191,7 @@
     "brand_name": "BeautyBox",
     "rating": 4.5,
     "description": "Luxurious beauty and skincare products.",
-    "brand_logo": "https://example.com/logos/beautybox.png",
+    "brand_logo": "https://i.ibb.co.com/FqtZHtN/beauty-box.png",
     "coupons": [
       {
         "coupon_code": "SKINCARE20",
@@ -164,6 +199,13 @@
         "expiry_date": "2024-12-31",
         "condition": "Valid on select brands.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "MAKEUPFREE30",
+        "description": "Free makeup pouch with orders over $75.",
+        "expiry_date": "2024-11-25",
+        "condition": "Applies to makeup category purchases.",
+        "coupon_type": "Free Gift"
       }
     ],
     "shop_Link": "https://beautybox.com",
