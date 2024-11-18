@@ -12,7 +12,7 @@ const Footer = () => {
       <section>
       <div className="md:text-2xl font-bold flex items-center gap-2">
             <img className="w-14 border border-gray-200 shadow-md rounded-lg" src={logoImg} alt="Logo" />
-             <span className="hidden md:block">Discount PRO</span>
+             <span>Discount PRO</span>
       </div>
       </section>
 
