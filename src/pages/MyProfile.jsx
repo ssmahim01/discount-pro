@@ -1,34 +1,24 @@
 import { useContext } from "react";
 import { AuthContext } from "../providers/Provider";
-import coverBG from "/src/assets/discountBG.jpg";
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="py-16 lg:w-3/5 w-11/12 mx-auto flex md:flex-row flex-col justify-between items-center">
-      <div className="md:w-1/2 mx-auto md:mb-0 mb-12">
-        <figure>
-          <img
-            className="w-11/12 mx-auto lg:h-80 h-64 rounded-xl border-2 border-gray-200 bg-base-100 shadow-md"
-            src={coverBG}
-            alt="Cover"
-          />
-        </figure>
+    <div className="py-16 w-11/12 mx-auto">
+      <div className="w-11/12 mx-auto md:mb-0 mb-12 bg-purple-500 h-40 rounded-lg text-white flex justify-center items-center">
 
-        <h2 className="text-3xl text-center text-gray-800 font-bold mt-6">
+        <h2 className="md:text-4xl text-2xl font-bold">
           Welcome {user?.displayName}
         </h2>
         </div>
 
-        <div className="divider divider-horizontal divider-start"></div>
-
-        <div className="md:w-1/2 mx-auto card bg-base-100 w-11/12 shadow-md border-2 border-gray-300 p-4 ml-4">
+        <div className="md:w-1/2 w-11/12 mx-auto card bg-base-100 shadow-md border-2 border-gray-200 p-4 mt-14">
           <figure>
             <img
               src={user?.photoURL}
               alt={user?.displayName}
-              className="w-3/5 border-2 border-gray-300 rounded-full"
+              className="w-60 border-2 border-gray-300 rounded-full"
             />
           </figure>
 
@@ -43,7 +33,7 @@ const MyProfile = () => {
             </p>
 
             <div className="pt-5">
-                <button className="w-full mx-auto btn bg-amber-500 text-white font-bold">Update Information</button>
+                <button className="w-3/4 mx-auto btn bg-amber-500 text-white font-bold">Update Information</button>
             </div>
           </div>
         </div>

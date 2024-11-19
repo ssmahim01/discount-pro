@@ -12,27 +12,27 @@ const Navbar = () => {
   const routeLinks = (
     <>
       <NavLink to="/">
-        <div className="flex gap-2 items-center text-gray-800">
+        <div className="flex gap-2 items-center">
           <FaHome className="text-lg" /> <span>Home</span>
         </div>
       </NavLink>
 
       <NavLink to="/brands">
-        <div className="flex gap-2 items-center text-gray-800">
+        <div className="flex gap-2 items-center">
           <MdBrandingWatermark className="text-lg" /> <span>Brands</span>
         </div>
       </NavLink>
 
       {user && (
         <NavLink to="/myProfile">
-          <div className="flex gap-2 items-center text-gray-800">
+          <div className="flex gap-2 items-center">
             <FaUser className="text-lg" /> <span>my-profile</span>
           </div>
         </NavLink>
       )}
 
       <NavLink to="/aboutDev">
-        <div className="flex gap-2 items-center text-gray-800">
+        <div className="flex gap-2 items-center">
           <FaDev className="text-lg" />
           <span>About Dev</span>
         </div>

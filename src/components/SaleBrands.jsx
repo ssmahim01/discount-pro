@@ -27,14 +27,14 @@ const SaleBrands = () => {
     <div className="w-full mx-auto pt-10">
       <div className="flex justify-between">
         <h2 className="md:text-2xl text-xl text-gray-800 font-bold">
-          {location.pathname === "/" ? "Brands on Sell" : "The Brand On Sell"}
+          {location.pathname === "/" ? "Brands on Sale" : "The Brand On Sell"}
         </h2>
 
         {!user && (
           <div>
             <button
               onClick={handleGoogleLogin}
-              className="btn bg-zinc-300 w-full flex gap-2 justify-center items-center"
+              className="btn w-full flex gap-2 justify-center items-center border border-gray-200 shadow-md"
             >
               <FcGoogle className="text-2xl" />
               <span className="text-gray-800 font-bold">Login with Google</span>
