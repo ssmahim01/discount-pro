@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/Provider";
+import { toast } from "react-toastify";
 
 const Registration = () => {
   const {setUser, registerUser, updateUserInfo} = useContext(AuthContext);
@@ -17,7 +18,9 @@ const Registration = () => {
     const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
 
     if(!passwordRegex.test(password)){
-      alert("Password must have an Uppercase, a lowercase and 6 character or long");
+      toast.error("Password must have an Uppercase, a lowercase and 6 character or long", {
+        position: "top-center"
+      });
       return;
     };
 
@@ -34,7 +37,9 @@ const Registration = () => {
       .catch(error => {
         const errorMessage = error.message;
         // console.log(errorMessage);
-        alert("User profile update is failed");
+        toast.error("User profile update is failed", {
+          position: "top-center"
+        });
       })
     })
 
@@ -42,7 +47,9 @@ const Registration = () => {
       const errorMessage = error.message;
       // console.log(errorMessage);
 
-      alert("Registration Failed");
+      toast.error("Registration Failed", {
+        position: "top-center"
+      });
     })
   };
 

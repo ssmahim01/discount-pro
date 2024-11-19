@@ -3,7 +3,7 @@ const BrandCard = ({ brand }) => {
 
   if (isSaleOn) {
     return (
-      <div className="card bg-base-100 w-full shadow-sm">
+      <div className="card bg-base-100 w-full shadow-lg">
         <figure>
           <img
             src={brand_logo}

@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/Provider";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const { loginWithGoogle, setUser, loginWithEmailPassword } = useContext(AuthContext);
@@ -19,7 +20,9 @@ const Login = () => {
     .catch(error => {
         const errorMessage = error.message;
         // console.log(errorMessage);
-        alert("Failed to Google Login");
+        toast.error("Failed to Google Login", {
+          position: "top-center"
+        });
     })
   };
 
@@ -38,7 +41,9 @@ const Login = () => {
     })
 
     .catch(error => {
-      alert("Login Failed");
+      toast.error("Login Failed", {
+        position: "top-center"
+      });
       // console.log(error.message);
     })
   };
