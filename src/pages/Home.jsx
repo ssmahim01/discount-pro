@@ -14,7 +14,7 @@ const Home = () => {
         <TopBrands></TopBrands>
       </section>
 
-      {/* Brands not on Sell */}
+      {/* Sale is Off Brands */}
       <section className="md:w-4/5 w-11/12 mx-auto pb-5">
         <SaleOffBrands></SaleOffBrands>
       </section>

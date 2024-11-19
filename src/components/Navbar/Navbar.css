@@ -1,3 +1,8 @@
 a.active{
     color: lightseagreen;
 }
+
+.title-style{
+    text-transform: capitalize;
+    font-style: oblique;
+}

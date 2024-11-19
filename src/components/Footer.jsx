@@ -7,7 +7,7 @@ import logoImg from "../assets/discount.png";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-center bg-base-300 text-base-content rounded p-10">
+    <footer className="footer footer-center bg-base-200 rounded p-10 text-gray-800">
 
       <section>
       <div className="md:text-2xl font-bold flex items-center gap-2">

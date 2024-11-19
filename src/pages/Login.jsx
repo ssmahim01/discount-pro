@@ -18,7 +18,7 @@ const Login = () => {
     })
     .catch(error => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        // console.log(errorMessage);
         alert("Failed to Google Login");
     })
   };
@@ -39,7 +39,7 @@ const Login = () => {
 
     .catch(error => {
       alert("Login Failed");
-      console.log(error.message);
+      // console.log(error.message);
     })
   };
 
@@ -57,7 +57,7 @@ const Login = () => {
               className="btn w-full flex gap-3 justify-center items-center"
             >
               <FcGoogle className="text-2xl" />{" "}
-              <span className="text-base font-bold">Login with Google</span>
+              <span className="text-base text-gray-800 font-bold">Login with Google</span>
             </button>
           </div>
 
@@ -95,7 +95,7 @@ const Login = () => {
             </label>
           </div>
           <div className="form-control mt-6">
-            <button className="btn btn-success text-base text-white font-bold">
+            <button className="btn bg-cyan-500 text-base text-white font-bold">
               Login
             </button>
           </div>

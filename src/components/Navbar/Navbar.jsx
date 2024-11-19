@@ -12,25 +12,27 @@ const Navbar = () => {
   const routeLinks = (
     <>
       <NavLink to="/">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center text-gray-800">
           <FaHome className="text-lg" /> <span>Home</span>
         </div>
       </NavLink>
 
       <NavLink to="/brands">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center text-gray-800">
           <MdBrandingWatermark className="text-lg" /> <span>Brands</span>
         </div>
       </NavLink>
 
-      <NavLink to="/myProfile">
-        <div className="flex gap-2 items-center">
-          <FaUser className="text-lg" /> <span>my-profile</span>
-        </div>
-      </NavLink>
+      {user && (
+        <NavLink to="/myProfile">
+          <div className="flex gap-2 items-center text-gray-800">
+            <FaUser className="text-lg" /> <span>my-profile</span>
+          </div>
+        </NavLink>
+      )}
 
       <NavLink to="/aboutDev">
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center text-gray-800">
           <FaDev className="text-lg" />
           <span>About Dev</span>
         </div>
@@ -71,7 +73,7 @@ const Navbar = () => {
             src={logoImg}
             alt="Logo"
           />
-          <span className="hidden md:block">Discount PRO</span>
+          <span className="hidden md:block text-gray-800 title-style">Discount PRO</span>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -86,17 +88,19 @@ const Navbar = () => {
               <figure>
                 <img
                   className="w-12 h-12 rounded-full"
-                  src={user.photoURL}
-                  alt={user.displayName}
+                  src={user?.photoURL}
+                  alt={user?.displayName}
                 />
               </figure>
 
-              <p className="text-sm text-gray-600 font-bold md:block hidden">{user.email}</p>
+              <p className="text-sm text-gray-600 font-bold md:block hidden">
+                {user?.email}
+              </p>
             </div>
 
             <button
               onClick={logOutUser}
-              className="btn btn-error rounded-none text-white font-bold"
+              className="btn bg-rose-500 rounded-none text-white font-bold"
             >
               Log Out
             </button>

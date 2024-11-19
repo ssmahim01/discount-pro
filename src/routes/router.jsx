@@ -9,6 +9,7 @@ import Login from "../pages/Login";
 import Registration from "../pages/Registration";
 import ErrorPage from "../ErrorElement/ErrorPage";
 import SaleBrands from "../components/SaleBrands";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "/myProfile",
-                element: <MyProfile></MyProfile>
+                element: <PrivateRoute><MyProfile></MyProfile></PrivateRoute>
             },
             {
                 path: "/aboutDev",

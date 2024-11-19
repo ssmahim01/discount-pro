@@ -29,19 +29,18 @@ const Registration = () => {
       updateUserInfo({displayName:name, photoURL:photo})
       .then(() => {
         navigate("/");
-        return;
       })
 
       .catch(error => {
         const errorMessage = error.message;
-        console.log(errorMessage);
+        // console.log(errorMessage);
         alert("User profile update is failed");
       })
     })
 
     .catch(error => {
       const errorMessage = error.message;
-      console.log(errorMessage);
+      // console.log(errorMessage);
 
       alert("Registration Failed");
     })
@@ -105,7 +104,7 @@ const Registration = () => {
            </div>
          </form>
    
-         <p className="text-gray-700 font-bold pb-8 text-center">Already have an Account? Please <Link to="/authentication/login" className="text-success underline">Login</Link></p>
+         <p className="text-gray-700 font-bold pb-8 text-center">Already have an Account? Please <Link to="/authentication/login" className="text-cyan-500 underline">Login</Link></p>
        </div>
       </div>
     );
