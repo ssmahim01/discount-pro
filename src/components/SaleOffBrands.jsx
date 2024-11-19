@@ -7,11 +7,11 @@ const SaleOffBrands = () => {
   return (
     <div className="w-full mx-auto pt-5">
       <div className="flex flex-col justify-center items-center gap-3">
-        <h2 className="md:text-4xl text-2xl text-center text-gray-800 font-bold">
+        <h2 className="md:text-4xl text-2xl text-center text-gray-800 font-bold animate__animated animate__fadeInLeft animate__delay-1s">
           Brands Where Sale is Off
         </h2>
 
-        <p className="lg:w-3/5 w-4/5 md:text-base text-sm text-gray-500 font-semibold text-center">
+        <p className="lg:w-3/5 w-4/5 md:text-base text-sm text-gray-500 font-semibold text-center animate__animated animate__fadeInLeft animate__delay-2s">
           A brand always try to get customers love. Some brand provide the best
           discount for their customers through coupon code. When time will
           finish, anyone does not access to use the coupon.

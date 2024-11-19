@@ -13,12 +13,12 @@ const MyProfile = () => {
         </h2>
         </div>
 
-        <div className="lg:w-1/2 md:w-3/4 w-11/12 mx-auto card bg-base-100 shadow-md border-2 border-gray-200 p-6 mt-14">
+        <div className="lg:w-3/5 md:w-4/5 w-11/12 mx-auto card bg-base-100 shadow-md border-2 border-gray-200 p-6 mt-14">
           <figure>
             <img
               src={user?.photoURL}
               alt={user?.displayName}
-              className="md:w-60 w-56 border-2 border-gray-300 rounded-full"
+              className="w-56 border-2 border-gray-300 rounded-full"
             />
           </figure>
 
@@ -28,13 +28,12 @@ const MyProfile = () => {
             <h2 className="lg:text-xl text-lg text-gray-700 font-bold">
               <span className="text-gray-950">User Name:</span> {user?.displayName}
             </h2>
-            <p className="lg:text-lg text-gray-700 font-bold">
+           <div className="flex md:flex-row flex-col justify-between items-center md:pt-4 lg:px-8 md:gap-0 gap-5">
+           <p className="lg:text-lg md:text-base text-sm text-gray-700 font-bold">
               <span className="text-gray-900">User Email:</span> {user?.email}
             </p>
-
-            <div className="pt-5">
-                <button className="lg:w-3/4 md:w-11/12 w-full mx-auto btn bg-amber-500 text-white font-bold">Update Information</button>
-            </div>
+                <button className="btn bg-amber-500 text-white  lg:text-base md:text-sm font-bold rounded-full px-5">Update Information</button>
+           </div>
           </div>
         </div>
     </div>

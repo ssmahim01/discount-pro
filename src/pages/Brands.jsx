@@ -5,7 +5,7 @@ const Brands = () => {
     const brands = useLoaderData();
 
   return (
-    <div className="lg:w-4/5 w-11/12 mx-auto p-10">
+    <div className="lg:w-4/5 w-11/12 mx-auto py-10 px-4">
       <div className="flex md:flex-row flex-col md:justify-between justify-center items-center md:gap-0 gap-3">
         <h2 className="lg:text-2xl text-xl text-gray-800 font-bold">Collect your Coupon</h2>
         <div>

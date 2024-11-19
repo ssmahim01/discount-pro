@@ -54,9 +54,9 @@ const Registration = () => {
   };
 
     return (
-        <div className="flex justify-center items-center py-14">
+        <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-14">
         <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
-           <h2 className="animate__animated animate__fadeInRight md:text-3xl text-xl font-bold pt-7 text-center">Register Form!</h2>
+           <h2 className="animate__animated animate__fadeInRight md:text-3xl text-2xl font-bold pt-7 text-center">Register Form!</h2>
          <form onSubmit={handleRegister} className="card-body">
            <div className="form-control border-t border-gray-300 pt-4">
              <label className="label">

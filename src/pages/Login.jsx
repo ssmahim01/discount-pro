@@ -49,9 +49,9 @@ const Login = () => {
   };
 
   return (
-    <div className="flex justify-center items-center py-14">
+    <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-14">
       <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
-        <h2 className="w-4/5 mx-auto md:text-3xl text-xl font-bold pt-7 text-center border-b border-gray-300 pb-6">
+        <h2 className="w-4/5 mx-auto md:text-3xl text-2xl font-bold pt-7 text-center border-b border-gray-300 pb-6">
           Login Form!
         </h2>
 
