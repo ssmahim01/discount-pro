@@ -4,8 +4,12 @@ import { MdBrandingWatermark } from "react-icons/md";
 import { SiFacebook } from "react-icons/si";
 import { Link } from "react-router-dom";
 import logoImg from "../assets/discount.png";
+import { useContext } from "react";
+import { AuthContext } from "../providers/Provider";
 
 const Footer = () => {
+  const {user} = useContext(AuthContext);
+
   return (
     <footer className="footer footer-center bg-base-200 rounded p-10 text-gray-800">
 
@@ -16,7 +20,7 @@ const Footer = () => {
       </div>
       </section>
 
-      <nav className="md:grid md:grid-flow-col flex flex-wrap justify-center items-center gap-6">
+      <nav className="md:grid md:grid-flow-col flex flex-wrap justify-center items-center gap-6 *:font-semibold">
 
         <Link to="/">
           <div className="flex gap-2 items-center">
@@ -30,11 +34,13 @@ const Footer = () => {
           </div>
         </Link>
 
-        <Link to="/myProfile">
-          <div className="flex gap-2 items-center">
-            <FaUser className="text-lg" /> <span>my-profile</span>
-          </div>
-        </Link>
+       {
+        user &&  <Link to="/myProfile">
+        <div className="flex gap-2 items-center">
+          <FaUser className="text-lg" /> <span>My Profile</span>
+        </div>
+      </Link>
+       }
 
         <Link to="/aboutDev">
           <div className="flex gap-2 items-center">

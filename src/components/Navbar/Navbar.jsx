@@ -26,7 +26,7 @@ const Navbar = () => {
       {user && (
         <NavLink to="/myProfile">
           <div className="flex gap-2 items-center">
-            <FaUser className="text-lg" /> <span>my-profile</span>
+            <FaUser className="text-lg" /> <span>My Profile</span>
           </div>
         </NavLink>
       )}
