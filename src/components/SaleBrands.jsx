@@ -26,7 +26,7 @@ const SaleBrands = () => {
   return (
     <div className="w-full mx-auto pt-10">
       <div className="flex justify-between">
-        <h2 className="md:text-2xl text-xl text-gray-700 font-bold">
+        <h2 className="md:text-2xl text-xl text-gray-800 font-bold">
           {location.pathname === "/" ? "Brands on Sell" : "The Brand On Sell"}
         </h2>
 

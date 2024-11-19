@@ -8,7 +8,7 @@ const TopBrands = () => {
   return (
     <div className="md:w-4/5 w-11/12 mx-auto">
       <div className="space-y-5">
-        <h2 className="md:text-4xl text-2xl text-center text-gray-700 font-bold pb-5 animate__animated animate__fadeInLeft">
+        <h2 className="md:text-4xl text-2xl text-center text-gray-800 font-bold pb-5 animate__animated animate__fadeInLeft">
           Your Favorite Top Brands
         </h2>
 
