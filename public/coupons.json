@@ -14,7 +14,7 @@
         "coupon_type": "Percentage"
       },
       {
-        "coupon_code": "FREESHIP20",
+        "coupon_code": "FREESHIP",
         "description": "Free shipping on all orders.",
         "expiry_date": "2024-11-30",
         "condition": "No minimum purchase required.",
@@ -59,7 +59,7 @@
     "brand_logo": "https://i.ibb.co.com/cD51PK0/bookworm.jpg",
     "coupons": [
       {
-        "coupon_code": "READMORE10",
+        "coupon_code": "READMORE",
         "description": "5% off on all book purchases.",
         "expiry_date": "2024-12-15",
         "condition": "Valid for orders above $20.",
@@ -83,6 +83,13 @@
         "expiry_date": "2024-11-28",
         "condition": "Applicable on orders above $30.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FIRSTBUY",
+        "description": "10% off on your first order.",
+        "expiry_date": "2024-12-31",
+        "condition": "Valid for new users.",
+        "coupon_type": "Percentage"
       }
     ],
     "shop_Link": "https://greengrocery.com.bd/",
@@ -104,14 +111,14 @@
         "coupon_type": "Percentage"
       },
       {
-        "coupon_code": "FREEBAG10",
+        "coupon_code": "FREEBAG",
         "description": "Free gym bag with purchases over $100.",
         "expiry_date": "2024-12-15",
         "condition": "Order total must exceed $100.",
         "coupon_type": "Free Gift"
       }
     ],
-    "shop_Link": "https://fitgear-lagos.com",
+    "shop_Link": "https://fitgearsolutions.com/",
     "category": "Fitness",
     "isSaleOn": true
   },
@@ -130,7 +137,7 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://homedecor.com",
+    "shop_Link": "https://homendecorbd.com/",
     "category": "Home & Living",
     "isSaleOn": false
   },
@@ -149,14 +156,14 @@
         "coupon_type": "Percentage"
       },
       {
-        "coupon_code": "FREEGAME10",
+        "coupon_code": "FREEGAME",
         "description": "Free game with Xbox console purchase.",
         "expiry_date": "2024-12-15",
         "condition": "Purchase any Xbox console.",
         "coupon_type": "Free Gift"
       }
     ],
-    "shop_Link": "https://gamerzone.com",
+    "shop_Link": "https://gamerzoneme.com/",
     "category": "Gaming",
     "isSaleOn": true
   },
@@ -182,7 +189,7 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://travelease.com",
+    "shop_Link": "https://travelease.com/",
     "category": "Travel",
     "isSaleOn": true
   },
@@ -201,14 +208,14 @@
         "coupon_type": "Percentage"
       },
       {
-        "coupon_code": "MAKEUPFREE30",
+        "coupon_code": "MAKEUPFREE",
         "description": "Free makeup pouch with orders over $75.",
         "expiry_date": "2024-11-25",
         "condition": "Applies to makeup category purchases.",
         "coupon_type": "Free Gift"
       }
     ],
-    "shop_Link": "https://beautybox.com",
+    "shop_Link": "https://thebeautybox.com/",
     "category": "Beauty & Skincare",
     "isSaleOn": true
   },
@@ -225,9 +232,16 @@
         "expiry_date": "2024-12-20",
         "condition": "Minimum purchase of $30 required.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "TOYSFREE",
+        "description": "Free toy with every pet accessory purchase.",
+        "expiry_date": "2024-11-30",
+        "condition": "Valid for accessory purchases only.",
+        "coupon_type": "Free Gift"
       }
     ],
-    "shop_Link": "https://petcare.com",
+    "shop_Link": "https://bdpetcare.com/",
     "category": "Pet Supplies",
     "isSaleOn": false
   },
@@ -263,9 +277,16 @@
         "expiry_date": "2024-12-15",
         "condition": "Valid on orders above $20.",
         "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "FREEOIL",
+        "description": "Free oil change with purchases over $100.",
+        "expiry_date": "2024-12-30",
+        "condition": "Order total must exceed $100.",
+        "coupon_type": "Free Service"
       }
     ],
-    "shop_Link": "https://autopartspro.com",
+    "shop_Link": "https://www.autopartspro.co.uk/",
     "category": "Automotive",
     "isSaleOn": true
   }
