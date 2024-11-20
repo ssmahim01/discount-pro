@@ -5,7 +5,7 @@ const MyProfile = () => {
   const { user } = useContext(AuthContext);
 
   return (
-    <div className="py-16">
+    <div className="pb-16">
       <div className="md:mb-0 mb-12 bg-purple-500 md:h-36 h-32 text-white flex justify-center items-center lg:px-0 md:px-12 px-8">
 
         <h2 className="lg:text-4xl md:text-3xl text-2xl font-bold flex md:flex-row flex-col justify-center items-center gap-2">

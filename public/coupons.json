@@ -21,7 +21,7 @@
         "coupon_type": "Free Shipping"
       }
     ],
-    "shop_Link": "https://techmart.com",
+    "shop_Link": "https://techmartgadget.com/",
     "category": "Electronics",
     "isSaleOn": true
   },
@@ -47,7 +47,7 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://fashionhub.com",
+    "shop_Link": "https://www.fashionhubclub.com/collections/fhc-collection",
     "category": "Clothing",
     "isSaleOn": true
   },
@@ -59,14 +59,14 @@
     "brand_logo": "https://i.ibb.co.com/cD51PK0/bookworm.jpg",
     "coupons": [
       {
-        "coupon_code": "READMORE",
+        "coupon_code": "READMORE10",
         "description": "5% off on all book purchases.",
         "expiry_date": "2024-12-15",
         "condition": "Valid for orders above $20.",
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://bookworm.com",
+    "shop_Link": "https://thebookworm.co.in/",
     "category": "Books & Stationery",
     "isSaleOn": true
   },
@@ -85,7 +85,7 @@
         "coupon_type": "Percentage"
       }
     ],
-    "shop_Link": "https://grocerystore.com",
+    "shop_Link": "https://greengrocery.com.bd/",
     "category": "Groceries",
     "isSaleOn": true
   },
