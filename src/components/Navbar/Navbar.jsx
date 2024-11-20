@@ -41,10 +41,10 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar pt-5 lg:px-24">
+    <div className="navbar py-4 lg:px-24 border-b border-gray-200 shadow-sm bg-base-100">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden border-2 border-gray-200 shadow-sm mr-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -73,7 +73,7 @@ const Navbar = () => {
             src={logoImg}
             alt="Logo"
           />
-          <span className="hidden md:block text-gray-800 title-style">Discount PRO</span>
+          <span className="hidden md:block text-gray-800">Discount PRO</span>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">

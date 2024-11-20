@@ -11,7 +11,7 @@ const Header = () => {
 
     return (
         <div>
-            {user && location.pathname === "/" && <h2 className="text-center md:text-3xl text-2xl text-slate-700 font-bold pt-6 animate__animated animate__fadeInLeft title-style">Welcome {user?.displayName}...</h2>}
+            {user && location.pathname === "/" && <h2 className="text-center md:text-3xl text-xl text-slate-700 font-bold pt-6 animate__animated animate__fadeInLeft title-style">Welcome <span className="text-indigo-500">{user?.displayName}</span></h2>}
             <Navbar></Navbar>
         </div>
     );
