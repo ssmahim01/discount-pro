@@ -1,29 +1,33 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/Provider";
 import { toast } from "react-toastify";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
-  const { loginWithGoogle, setUser, loginWithEmailPassword } = useContext(AuthContext);
+  const { loginWithGoogle, setUser, loginWithEmailPassword } =
+    useContext(AuthContext);
+    
+  const [hidePassword, setHidePassword] = useState(true);
 
   const location = useLocation();
   const navigate = useNavigate();
 
   const handleGoogleLogin = () => {
     loginWithGoogle()
-    .then((result) => {
+      .then((result) => {
         const user = result.user;
         setUser(user);
         navigate(location?.state ? location.state : "/");
-    })
-    .catch(error => {
+      })
+      .catch((error) => {
         const errorMessage = error.message;
         // console.log(errorMessage);
         toast.error("Failed to Google Login", {
-          position: "top-center"
+          position: "top-center",
         });
-    })
+      });
   };
 
   const handleLoginWithEmailPass = (e) => {
@@ -33,19 +37,19 @@ const Login = () => {
     const password = e.target.password.value;
 
     loginWithEmailPassword(email, password)
-    .then(result => {
-      const user = result.user;
-      setUser(user);
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
 
-      navigate(location?.state ? location.state : "/");
-    })
+        navigate(location?.state ? location.state : "/");
+      })
 
-    .catch(error => {
-      toast.error("Login Failed", {
-        position: "top-center"
+      .catch((error) => {
+        toast.error("Login Failed", {
+          position: "top-center",
+        });
+        // console.log(error.message);
       });
-      // console.log(error.message);
-    })
   };
 
   return (
@@ -62,7 +66,9 @@ const Login = () => {
               className="btn w-full flex gap-3 justify-center items-center"
             >
               <FcGoogle className="text-2xl" />{" "}
-              <span className="text-base text-gray-800 font-bold">Login with Google</span>
+              <span className="text-base text-gray-800 font-bold">
+                Login with Google
+              </span>
             </button>
           </div>
 
@@ -82,17 +88,23 @@ const Login = () => {
               required
             />
           </div>
-          <div className="form-control">
+          <div className="form-control relative">
             <label className="label">
               <span className="label-text font-bold">Password</span>
             </label>
             <input
-              type="password"
+              type={hidePassword ? "password" : "text"}
               name="password"
               placeholder="Type your Password"
               className="input input-bordered"
               required
             />
+            <button
+              onClick={() => setHidePassword(!hidePassword)}
+              className="absolute btn btn-xs top-12 right-3"
+            >
+              {hidePassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
             <label className="label">
               <a className="label-text-alt link link-hover font-semibold">
                 Forgot password?
