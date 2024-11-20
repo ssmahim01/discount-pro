@@ -39,8 +39,10 @@ const BrandInfo = ({ brand }) => {
         <p className="font-bold">Description: <span className="text-gray-700">{description}</span></p>
      </div>
 
-     <div className="flex justify-between items-center pt-4">
-      <button className="text-white font-bold btn bg-purple-500 px-6 rounded-full"><Link to={`/brand/${_id}`}>View Coupons</Link></button>
+     <div className="flex justify-between items-center md:gap-0 gap-6 pt-4 md:mx-0 mx-auto">
+     {
+      isSaleOn &&  <button className="text-white font-bold btn bg-purple-500 px-6 rounded-full"><Link to={`/brand/${_id}`}>View Coupons</Link></button>
+     }
 
       {
         isSaleOn ? <h3 className="badge badge-success text-white font-semibold p-3 border-2 border-slate-300 animate-bounce shadow-md">Sale is on</h3> : <h3 className="badge badge-error text-white font-semibold p-4 border-2 border-slate-300 shadow-md">Sale is Unavailable</h3>

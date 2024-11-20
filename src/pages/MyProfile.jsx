@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../providers/Provider";
+import { Link } from "react-router-dom";
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
@@ -13,12 +14,12 @@ const MyProfile = () => {
         </h2>
         </div>
 
-        <div className="lg:w-3/5 md:w-4/5 w-11/12 mx-auto card bg-base-100 shadow-md border-2 border-gray-200 p-6 mt-14">
+        <div className="lg:w-1/2 md:w-4/5 w-11/12 mx-auto card bg-base-100 shadow-md border-2 border-gray-200 p-6 mt-14">
           <figure>
             <img
               src={user?.photoURL}
               alt={user?.displayName}
-              className="w-56 h-56 border-3 border-gray-300 rounded-full"
+              className="w-52 h-52 border-3 border-gray-300 rounded-full"
             />
           </figure>
 
@@ -28,11 +29,13 @@ const MyProfile = () => {
             <h2 className="lg:text-xl text-lg text-gray-700 font-bold">
               <span className="text-gray-950">User Name:</span> {user?.displayName}
             </h2>
-           <div className="flex md:flex-row flex-col justify-between items-center md:pt-4 lg:px-8 md:gap-0 gap-5">
-           <p className="lg:text-lg md:text-base text-sm text-gray-700 font-bold">
+           <div className="flex md:flex-row flex-col justify-between items-center md:pt-6 lg:px-8 md:gap-0 gap-5">
+           <p className="md:text-lg text-sm text-gray-700 font-bold">
               <span className="text-gray-900">User Email:</span> {user?.email}
             </p>
-                <button className="btn bg-amber-500 text-white  lg:text-base md:text-sm font-bold rounded-full px-5">Update Information</button>
+                <div className="lg:w-56 md:w-48 w-11/12">
+                <button className="btn bg-amber-500 text-white text-base font-bold rounded-full w-full"><Link to="/updateInfo">Update</Link></button>
+                </div>
            </div>
           </div>
         </div>

@@ -10,6 +10,7 @@ import Registration from "../pages/Registration";
 import ErrorPage from "../ErrorElement/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import BrandDetails from "../pages/BrandDetails";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -29,13 +30,13 @@ const router = createBrowserRouter([
             <BrandDetails></BrandDetails>
           </PrivateRoute>
         ),
-        loader: async ({params}) => {
-            const res = await fetch("/coupons.json");
-            const data = await res.json();
-            const singleData = data.find(single => single._id == params.id);
+        loader: async ({ params }) => {
+          const res = await fetch("/coupons.json");
+          const data = await res.json();
+          const singleData = data.find((single) => single._id == params.id);
 
-            return singleData;
-        }
+          return singleData;
+        },
       },
       {
         path: "/brands",
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
             element: <Registration></Registration>,
           },
         ],
+      },
+      {
+        path: "/updateInfo",
+        element: <UpdateProfile></UpdateProfile>,
       },
     ],
   },

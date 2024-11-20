@@ -68,7 +68,7 @@
     ],
     "shop_Link": "https://thebookworm.co.in/",
     "category": "Books & Stationery",
-    "isSaleOn": true
+    "isSaleOn": false
   },
   {
     "_id": "4",
@@ -109,18 +109,11 @@
         "expiry_date": "2024-11-30",
         "condition": "Valid on select products only.",
         "coupon_type": "Percentage"
-      },
-      {
-        "coupon_code": "FREEBAG",
-        "description": "Free gym bag with purchases over $100.",
-        "expiry_date": "2024-12-15",
-        "condition": "Order total must exceed $100.",
-        "coupon_type": "Free Gift"
       }
     ],
     "shop_Link": "https://fitgearsolutions.com/",
     "category": "Fitness",
-    "isSaleOn": true
+    "isSaleOn": false
   },
   {
     "_id": "6",
@@ -139,7 +132,7 @@
     ],
     "shop_Link": "https://homendecorbd.com/",
     "category": "Home & Living",
-    "isSaleOn": false
+    "isSaleOn": true
   },
   {
     "_id": "7",
@@ -224,7 +217,7 @@
     "brand_name": "PetCare",
     "rating": 3.5,
     "description": "High-quality products for your furry friends.",
-    "brand_logo": "https://i.ibb.co.com/tZLJ1Qc/pet-care.jpg",
+    "brand_logo": "https://i.ibb.co.com/dQ21Dk8/pet-care-pet-supplies.jpg",
     "coupons": [
       {
         "coupon_code": "PET10",
@@ -243,7 +236,7 @@
     ],
     "shop_Link": "https://bdpetcare.com/",
     "category": "Pet Supplies",
-    "isSaleOn": false
+    "isSaleOn": true
   },
   {
     "_id": "11",
@@ -257,6 +250,13 @@
         "description": "15% off on organic products.",
         "expiry_date": "2024-12-10",
         "condition": "Valid for orders above $40.",
+        "coupon_type": "Percentage"
+      },
+      {
+        "coupon_code": "ECO5",
+        "description": "5% off on eco-friendly packaging items.",
+        "expiry_date": "2024-12-31",
+        "condition": "No minimum purchase required.",
         "coupon_type": "Percentage"
       }
     ],
