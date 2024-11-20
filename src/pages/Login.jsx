@@ -15,7 +15,7 @@ const Login = () => {
     .then((result) => {
         const user = result.user;
         setUser(user);
-        navigate("/");
+        navigate(location?.state ? location.state : "/");
     })
     .catch(error => {
         const errorMessage = error.message;
