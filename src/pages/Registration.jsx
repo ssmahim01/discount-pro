@@ -9,6 +9,7 @@ const Registration = () => {
   const { setUser, registerUser, updateUserInfo, loginWithGoogle } =
     useContext(AuthContext);
   const [hidePassword, setHidePassword] = useState(true);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const navigate = useNavigate();
 
@@ -23,12 +24,7 @@ const Registration = () => {
     const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
 
     if (!passwordRegex.test(password)) {
-      toast.error(
-        "Password must have an Uppercase, a lowercase and 6 character or long",
-        {
-          position: "top-center",
-        }
-      );
+     setErrorMessage("Password must have an Uppercase, a lowercase and 6 character or long");
       return;
     }
 
@@ -47,10 +43,9 @@ const Registration = () => {
           .then(() => {
             navigate("/");
             toast.success(`${user.displayName} successfully Registered`, {
-              position: "top-center"
+              position: "top-center",
             });
           })
-
 
           .catch((error) => {
             const errorMessage = error.message;
@@ -77,7 +72,7 @@ const Registration = () => {
         const user = result.user;
         setUser(user);
         toast.success(`${user.displayName} successfully Login`, {
-          position: "top-center"
+          position: "top-center",
         });
         navigate("/");
       })
@@ -91,94 +86,106 @@ const Registration = () => {
   };
 
   return (
-    <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-14">
-      <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
-        <h2 className="md:text-3xl text-2xl font-bold pt-7 text-center">
+    <div>
+       <h2 className="md:text-3xl text-2xl font-bold pt-10 text-center">
           Register Form!
         </h2>
-        <form onSubmit={handleRegister} className="card-body">
-          <div className="form-control border-t border-gray-300 pt-4">
-            <label className="label">
-              <span className="label-text font-bold">Name</span>
-            </label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Type your Name"
-              className="input input-bordered"
-              required
-            />
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text font-bold">Email</span>
-            </label>
-            <input
-              type="email"
-              name="email"
-              placeholder="Type your Email"
-              className="input input-bordered"
-              required
-            />
-          </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text font-bold">Photo-URL</span>
-            </label>
-            <input
-              type="text"
-              name="photoURL"
-              placeholder="Provide a Photo URL"
-              className="input input-bordered"
-              required
-            />
-          </div>
-          <div className="form-control relative">
-            <label className="label">
-              <span className="label-text font-bold">Password</span>
-            </label>
-            <input
-              type={hidePassword ? "password" : "text"}
-              name="password"
-              placeholder="Type your Password"
-              className="input input-bordered"
-              required
-            />
+      <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-12">
+        <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
+          <form onSubmit={handleRegister} className="card-body">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text font-bold">Name</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Type your Name"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text font-bold">Email</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                placeholder="Type your Email"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text font-bold">Photo-URL</span>
+              </label>
+              <input
+                type="text"
+                name="photoURL"
+                placeholder="Provide a Photo URL"
+                className="input input-bordered"
+                required
+              />
+            </div>
+            <div className="form-control relative">
+              <label className="label">
+                <span className="label-text font-bold">Password</span>
+              </label>
+              <input
+                type={hidePassword ? "password" : "text"}
+                name="password"
+                placeholder="Type your Password"
+                className="input input-bordered"
+                required
+              />
 
-            <button
-              onClick={() => setHidePassword(!hidePassword)}
-              className="absolute btn btn-xs top-12 right-3"
-              type="button"
+              <button
+                onClick={() => setHidePassword(!hidePassword)}
+                className="absolute btn btn-xs top-12 right-3"
+                type="button"
+              >
+                {hidePassword ? <FaEyeSlash /> : <FaEye />}
+              </button>
+            </div>
+
+              <div>
+               {
+                errorMessage && <p className="text-rose-500 text-center font-bold mt-5">{errorMessage}</p>
+               }
+              </div>
+
+            <div className="form-control mt-6">
+              <button className="btn bg-purple-500 text-base text-white font-bold">
+                Register
+              </button>
+            </div>
+          </form>
+
+          <p className="text-gray-700 font-bold text-center">
+            Already have an Account? Please{" "}
+            <Link
+              to="/authentication/login"
+              className="text-cyan-500 underline"
             >
-              {hidePassword ? <FaEyeSlash /> : <FaEye />}
+              Login
+            </Link>
+          </p>
+
+          <div className="divider w-4/5 mx-auto font-medium">Or</div>
+
+          <div className="w-4/5 mx-auto pb-8">
+            <button
+              onClick={handleGoogleLogin}
+              className="btn w-full flex gap-3 justify-center items-center"
+            >
+              <FcGoogle className="text-2xl" />{" "}
+              <span className="text-base text-gray-800 font-bold">
+                Login with Google
+              </span>
             </button>
           </div>
-          <div className="form-control mt-6">
-            <button className="btn bg-purple-500 text-base text-white font-bold">
-              Register
-            </button>
-          </div>
-        </form>
-
-        <p className="text-gray-700 font-bold text-center">
-          Already have an Account? Please{" "}
-          <Link to="/authentication/login" className="text-cyan-500 underline">
-            Login
-          </Link>
-        </p>
-
-        <div className="divider w-4/5 mx-auto font-medium">Or</div>
-
-        <div className="w-4/5 mx-auto pb-8">
-          <button
-            onClick={handleGoogleLogin}
-            className="btn w-full flex gap-3 justify-center items-center"
-          >
-            <FcGoogle className="text-2xl" />{" "}
-            <span className="text-base text-gray-800 font-bold">
-              Login with Google
-            </span>
-          </button>
         </div>
       </div>
     </div>

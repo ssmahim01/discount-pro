@@ -7,7 +7,7 @@ const ErrorPage = () => {
             <figure className="md:w-[450px] md:h-80 w-full h-72">
                 <img className="w-full h-full rounded-xl" src={errorImg} alt="The Error Image" />
             </figure>
-            <h1 className="md:text-4xl text-3xl text-gray-700 font-bold pb-5">Page Not Found</h1>
+            <h1 className="md:text-4xl text-3xl text-gray-700 font-bold pb-5">Not Found Page</h1>
 
             <button className="btn bg-amber-500 text-slate-100 font-bold rounded-none px-6"><Link to="/">Back to Home</Link></button>
         </div>
