@@ -1,6 +1,6 @@
 # Project Name
 
-**Discount pro**
+<b>Discount PRO</b>
 <br>
 
 # Purpose
