@@ -105,6 +105,10 @@ const BrandDetails = () => {
           </div>
         ))}
       </div>
+
+      <div className="mt-3">
+        <button className="block lg:w-1/4 md:w-1/3 w-3/5 mx-auto btn border-2 border-fuchsia-500 btn-outline text-base text-fuchsia-500 font-bold rounded-full hover:btn-secondary"><Link to="/brands">Back to Brands</Link></button>
+      </div>
     </div>
   );
 };

@@ -30,7 +30,7 @@ const MyProfile = () => {
               <span className="text-gray-950">User Name:</span> {user?.displayName}
             </h2>
            <div className="flex md:flex-row flex-col justify-between items-center md:pt-6 lg:px-8 md:gap-0 gap-5">
-           <p className="md:text-lg text-sm text-gray-700 font-bold">
+           <p className="md:text-base text-sm text-gray-700 font-bold">
               <span className="text-gray-900">User Email:</span> {user?.email}
             </p>
                 <div className="lg:w-56 md:w-48 w-11/12">

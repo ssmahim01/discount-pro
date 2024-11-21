@@ -11,6 +11,7 @@ import ErrorPage from "../ErrorElement/ErrorPage";
 import PrivateRoute from "./PrivateRoute";
 import BrandDetails from "../pages/BrandDetails";
 import UpdateProfile from "../pages/UpdateProfile";
+import ResetPassword from "../pages/ResetPassword";
 
 const router = createBrowserRouter([
   {
@@ -73,6 +74,10 @@ const router = createBrowserRouter([
         path: "/updateInfo",
         element: <UpdateProfile></UpdateProfile>,
       },
+      {
+        path:"/forgetPassword",
+        element:<ResetPassword></ResetPassword>
+      }
     ],
   },
 ]);

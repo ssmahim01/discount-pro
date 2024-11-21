@@ -1,10 +1,15 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/Provider";
 import { toast } from "react-toastify";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 
 const Registration = () => {
-  const { setUser, registerUser, updateUserInfo } = useContext(AuthContext);
+  const { setUser, registerUser, updateUserInfo, loginWithGoogle } =
+    useContext(AuthContext);
+  const [hidePassword, setHidePassword] = useState(true);
+
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
@@ -27,7 +32,7 @@ const Registration = () => {
       return;
     }
 
-    if(name.length < 5){
+    if (name.length < 5) {
       return toast.warning("Name must be at least 5 character or long", {
         position: "top-center",
       });
@@ -62,10 +67,26 @@ const Registration = () => {
       });
   };
 
+  const handleGoogleLogin = () => {
+    loginWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        setUser(user);
+        navigate("/");
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        // console.log(errorMessage);
+        toast.error("Failed to Google Login", {
+          position: "top-center",
+        });
+      });
+  };
+
   return (
     <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-14">
       <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
-        <h2 className="animate__animated animate__fadeInRight md:text-3xl text-2xl font-bold pt-7 text-center">
+        <h2 className="md:text-3xl text-2xl font-bold pt-7 text-center">
           Register Form!
         </h2>
         <form onSubmit={handleRegister} className="card-body">
@@ -105,17 +126,25 @@ const Registration = () => {
               required
             />
           </div>
-          <div className="form-control">
+          <div className="form-control relative">
             <label className="label">
               <span className="label-text font-bold">Password</span>
             </label>
             <input
-              type="password"
+              type={hidePassword ? "password" : "text"}
               name="password"
               placeholder="Type your Password"
               className="input input-bordered"
               required
             />
+
+            <button
+              onClick={() => setHidePassword(!hidePassword)}
+              className="absolute btn btn-xs top-12 right-3"
+              type="button"
+            >
+              {hidePassword ? <FaEyeSlash /> : <FaEye />}
+            </button>
           </div>
           <div className="form-control mt-6">
             <button className="btn bg-purple-500 text-base text-white font-bold">
@@ -124,12 +153,26 @@ const Registration = () => {
           </div>
         </form>
 
-        <p className="text-gray-700 font-bold pb-8 text-center">
+        <p className="text-gray-700 font-bold text-center">
           Already have an Account? Please{" "}
           <Link to="/authentication/login" className="text-cyan-500 underline">
             Login
           </Link>
         </p>
+
+        <div className="divider w-4/5 mx-auto font-medium">Or</div>
+
+        <div className="w-4/5 mx-auto pb-8">
+          <button
+            onClick={handleGoogleLogin}
+            className="btn w-full flex gap-3 justify-center items-center"
+          >
+            <FcGoogle className="text-2xl" />{" "}
+            <span className="text-base text-gray-800 font-bold">
+              Login with Google
+            </span>
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -5,9 +5,17 @@ import logoImg from "/src/assets/discount.png";
 import "./Navbar.css";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/Provider";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOutUser } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logOutUser()
+      toast.success("Log Out Successfully", {
+        position: "top-center"
+    });
+  };
 
   const routeLinks = (
     <>
@@ -99,7 +107,7 @@ const Navbar = () => {
             </div>
 
             <button
-              onClick={logOutUser}
+              onClick={handleLogout}
               className="btn bg-rose-500 rounded-none text-white font-bold"
             >
               Log Out

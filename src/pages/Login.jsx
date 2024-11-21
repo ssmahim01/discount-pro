@@ -6,8 +6,7 @@ import { toast } from "react-toastify";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
-  const { loginWithGoogle, setUser, loginWithEmailPassword } =
-    useContext(AuthContext);
+  const { email, setEmail, loginWithGoogle, setUser, loginWithEmailPassword } = useContext(AuthContext);
     
   const [hidePassword, setHidePassword] = useState(true);
 
@@ -52,6 +51,12 @@ const Login = () => {
       });
   };
 
+  const handleForgotPassword = () => {
+    if(email && email.includes("@", ".com")){
+     return navigate("/forgetPassword");
+    }
+  };
+
   return (
     <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-14">
       <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
@@ -85,6 +90,7 @@ const Login = () => {
               name="email"
               placeholder="Type your Email"
               className="input input-bordered"
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
           </div>
@@ -102,13 +108,14 @@ const Login = () => {
             <button
               onClick={() => setHidePassword(!hidePassword)}
               className="absolute btn btn-xs top-12 right-3"
+              type="button"
             >
               {hidePassword ? <FaEyeSlash /> : <FaEye />}
             </button>
             <label className="label">
-              <a className="label-text-alt link link-hover font-semibold">
+              <button onClick={handleForgotPassword} className="label-text-alt link link-hover font-semibold">
                 Forgot password?
-              </a>
+              </button>
             </label>
           </div>
           <div className="form-control mt-6">
