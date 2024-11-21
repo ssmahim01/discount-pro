@@ -19,6 +19,9 @@ const Login = () => {
         const user = result.user;
         setUser(user);
         navigate(location?.state ? location.state : "/");
+        toast.success(`${user.displayName} successfully Login`, {
+          position: "top-center"
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
@@ -41,6 +44,9 @@ const Login = () => {
         setUser(user);
 
         navigate(location?.state ? location.state : "/");
+        toast.success(`${user.displayName} successfully Login`, {
+          position: "top-center"
+        });
       })
 
       .catch((error) => {

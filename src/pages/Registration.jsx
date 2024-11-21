@@ -46,7 +46,11 @@ const Registration = () => {
         updateUserInfo({ displayName: name, photoURL: photo })
           .then(() => {
             navigate("/");
+            toast.success(`${user.displayName} successfully Registered`, {
+              position: "top-center"
+            });
           })
+
 
           .catch((error) => {
             const errorMessage = error.message;
@@ -72,6 +76,9 @@ const Registration = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
+        toast.success(`${user.displayName} successfully Login`, {
+          position: "top-center"
+        });
         navigate("/");
       })
       .catch((error) => {

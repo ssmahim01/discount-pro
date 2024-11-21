@@ -1,11 +1,9 @@
 import { useContext } from "react";
 import { AuthContext } from "../providers/Provider";
-import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const ResetPassword = () => {
     const {email, passwordResetEmail, logOutUser} = useContext(AuthContext);
-    const navigate = useNavigate();
     
     const handleResetPassword = (event) => {
         event.preventDefault();
@@ -13,6 +11,7 @@ const ResetPassword = () => {
         passwordResetEmail(email)
         .then(() => {
             logOutUser();
+            window.open('https://mail.google.com/', '_blank');
         })
 
         .catch(error => {

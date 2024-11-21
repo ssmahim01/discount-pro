@@ -3,6 +3,7 @@ import BrandCard from "./BrandCard";
 import { useContext } from "react";
 import { AuthContext } from "../providers/Provider";
 import { FcGoogle } from "react-icons/fc";
+import { toast } from "react-toastify";
 
 const SaleBrands = () => {
   const brands = useLoaderData();
@@ -15,6 +16,9 @@ const SaleBrands = () => {
       .then((result) => {
         const user = result.user;
         setUser(user);
+        toast.success(`${user.displayName} successfully Login`, {
+          position: "top-center"
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;
