@@ -70,7 +70,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-56 p-5 shadow space-y-3 *:font-semibold"
+            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[10] mt-3 w-56 p-5 shadow space-y-3 *:font-semibold"
           >
             {routeLinks}
           </ul>

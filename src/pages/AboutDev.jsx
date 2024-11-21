@@ -11,7 +11,7 @@ const AboutDev = () => {
   return (
     <div className="py-16">
       <div className="pb-8">
-        <h1 className="md:text-4xl text-2xl text-center font-bold">
+        <h1 className="md:text-4xl text-3xl text-center font-bold">
           About Developer
         </h1>
       </div>
@@ -31,12 +31,12 @@ const AboutDev = () => {
             </h2>
             <p className="text-gray-600 font-semibold lg:text-left text-center">
               I live in Bangladesh. I am a student of English Department. Also,
-              I was choose my profession as a developer.
+              I was chose my profession as a developer.
             </p>
           </div>
 
           <div className="mt-3">
-            <h2 className="md:text-xl font-bold pb-1">Skills</h2>
+            <h2 className="text-xl font-bold pb-1">Skills</h2>
             <div className="flex gap-2 items-center text-gray-700 font-semibold">
               <FaHtml5 className="text-red-500" />{" "}
               <span>HTML5 - Hypertext Markup Language 5</span>
@@ -68,7 +68,7 @@ const AboutDev = () => {
       </div>
 
       <div className="mt-14 space-y-4 md:w-4/5 w-11/12 mx-auto">
-        <h2 className="md:text-4xl text-xl font-bold text-center">
+        <h2 className="md:text-4xl text-3xl font-bold text-center">
           Latest Projects
         </h2>
 

@@ -12,7 +12,7 @@ const SaleOffBrandCard = ({brand}) => {
           />
         </figure>
         <div className="pt-4 space-y-2 pr-3">
-          <h2 className="card-title md:text-xl text-gray-700 font-bold">
+          <h2 className="card-title md:text-xl text-gray-700 font-bold flex flex-wrap">
            <span className="text-gray-950">Brand Name:</span> {brand_name}
           </h2>
           <p className="md:text-lg text-gray-700 font-bold">
