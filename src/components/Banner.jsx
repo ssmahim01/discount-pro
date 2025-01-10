@@ -16,27 +16,27 @@ const Banner = () => {
         <SwiperSlide>
           <img
             src="https://i.ibb.co.com/0M069jM/cloth-products.jpg"
-            className="w-full lg:h-96 md:h-72 h-60"
+            className="w-full lg:h-[420px] md:h-72 h-60"
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co.com/mCPwYQJ/electronics.jpg"
-            className="w-full object-cover lg:h-96 md:h-72 h-60"
+            className="w-full object-cover lg:h-[420px] md:h-72 h-60"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src="https://i.ibb.co.com/HXZfHhV/grocery.jpg"
-            className="w-full lg:h-96 md:h-72 h-60"
+            className="w-full lg:h-[420px] md:h-72 h-60"
           />
         </SwiperSlide>
         <SwiperSlide>
           {" "}
           <img
             src="https://i.ibb.co.com/5vK7vnz/gym-accessories.jpg"
-            className="w-full object-cover lg:h-96 md:h-72 h-60"
+            className="w-full object-cover lg:h-[420px] md:h-72 h-60"
           />
         </SwiperSlide>
       </Swiper>
