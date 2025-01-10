@@ -5,14 +5,13 @@ import "swiper/css/pagination";
 
 const Banner = () => {
   return (
-    <div className="lg:w-4/5 w-11/12 mx-auto my-10">
+    <div className="mb-10">
       <Swiper
         modules={[Pagination, Autoplay]}
         loop={true}
         slidesPerView={1}
         pagination={{ clickable: true }}
         autoplay={{delay:2000}}
-        className="rounded-xl"
       >
         <SwiperSlide>
           <img
@@ -24,7 +23,7 @@ const Banner = () => {
           {" "}
           <img
             src="https://i.ibb.co.com/mCPwYQJ/electronics.jpg"
-            className="w-full lg:h-96 md:h-72 h-60"
+            className="w-full object-cover lg:h-96 md:h-72 h-60"
           />
         </SwiperSlide>
         <SwiperSlide>
@@ -37,7 +36,7 @@ const Banner = () => {
           {" "}
           <img
             src="https://i.ibb.co.com/5vK7vnz/gym-accessories.jpg"
-            className="w-full lg:h-96 md:h-72 h-60"
+            className="w-full object-cover lg:h-96 md:h-72 h-60"
           />
         </SwiperSlide>
       </Swiper>

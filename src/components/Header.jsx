@@ -10,8 +10,8 @@ const Header = () => {
     const location = useLocation();
 
     return (
-        <div>
-            {user && location.pathname === "/" && <h2 className="text-center md:text-3xl text-xl text-slate-700 font-bold pt-6 animate__animated animate__fadeInLeft title-style">Welcome <span className="text-indigo-500">{user?.displayName}</span></h2>}
+        <div className="fixed z-10 w-full top-0">
+            {user && location.pathname === "/" && <h2 className="text-center md:text-3xl text-xl text-slate-700 font-bold pt-6 animate__animated animate__fadeInLeft title-style bg-base-100">Welcome <span className="text-indigo-500">{user?.displayName}</span></h2>}
             <Navbar></Navbar>
         </div>
     );

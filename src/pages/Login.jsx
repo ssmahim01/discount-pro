@@ -69,7 +69,7 @@ const Login = () => {
        <h2 className="w-4/5 mx-auto md:text-3xl text-2xl font-bold pt-12 text-center">
           Login Form!
         </h2>
-      <div className="md:w-full w-11/12 mx-auto flex justify-center items-center py-12">
+      <div className="md:w-full w-11/12 mx-auto flex justify-center items-center pt-6 pb-12">
         <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-md border border-gray-300">
           <form onSubmit={handleLoginWithEmailPass} className="card-body">
             <div>

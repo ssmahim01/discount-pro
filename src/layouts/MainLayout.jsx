@@ -15,7 +15,7 @@ const MainLayout = () => {
     return (
         <div className="overflow-hidden bg-slate-50">
             <Header></Header>
-            <section className="min-h-[calc(100vh-390px)]">
+            <section className="pt-16 min-h-[calc(100vh-390px)]">
             <Outlet></Outlet>
             </section>
             <Footer></Footer>
