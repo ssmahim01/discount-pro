@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const AboutDev = () => {
   return (
-    <div className="py-16">
+    <div className="pt-12 pb-16">
       <div className="pb-8">
         <h1 className="md:text-4xl text-3xl text-center font-bold">
           About Developer
