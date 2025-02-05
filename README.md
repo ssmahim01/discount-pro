@@ -19,14 +19,12 @@ The main goal of **Discount PRO** is to help users discover discounts from vario
 
 ---
 
-## 🛠️ Used Main Technologies
+## 🛠️ Used Main Technologies  
 
-| Category        | Technologies |
-|----------------|-------------|
-| **Frontend**   | React, Tailwind CSS |
-| **Backend**    | Firebase (Authentication, Hosting) |
-| **Routing**    | React Router |
-| **UI Components** | React Icons, React Fast Marquee, Animate.css |
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Firebase (Authentication, Hosting)  
+- **Routing:** React Router  
+- **UI Components:** React Icons, React Fast Marquee, Animate.css
 
 ---
 
@@ -68,6 +66,7 @@ The main goal of **Discount PRO** is to help users discover discounts from vario
   "swiper": "^11.1.15"
 }
 ```
+---
 
 ## 📥 Installation & Setup
 
