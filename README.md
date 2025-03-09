@@ -2,128 +2,128 @@
   <img width="100%" height="340" src="https://github.com/ssmahim01/discount-pro/blob/main/public/discount-pro-bg.png"  />
 </div>
 
-# Project Name
+# 🛍️ Discount PRO
 
-<b>Discount PRO</b>
-<hr>
+**A platform to discover brand discounts and easily apply coupon codes.**
 
-# Purpose
+---
 
-The main purpose of the project is users can see brands of different categories. There are lot of brand shops provide some coupon code for get discount. Our website will collect these coupons for users. An user can easily achieve discount through the coupon code.
-<hr>
+## 🎯 Purpose
 
-# Main Technologies
+The main goal of **Discount PRO** is to help users discover discounts from various brands. Many brand shops offer coupon codes for exclusive discounts, and our platform aggregates these coupons in one place.  
 
-<li><b>Tailwind CSS: Framework of CSS</b></li>
-<li><b>React: Library of JavaScript</b></li>
-<li><b>Firebase: Authentication</b></li>
+**Key Benefits:**
+- Users can **browse brands by category**.
+- Users can **copy and use coupon codes** easily.
+- Only logged-in users can **view detailed brand information**.
 
-<hr>
+---
 
-# Live URL
+## 🛠️ Used Main Technologies  
 
-<li><b>Live Site Link:</b> https://discount-pro-market.web.app</li>
-<hr>
+- **Frontend:** React, Tailwind CSS  
+- **Backend:** Firebase (Authentication, Hosting)  
+- **Routing:** React Router  
+- **UI Components:** React Icons, React Fast Marquee, Animate.css
 
-# Key Features of the Project
+---
 
-<b>User Authentication</b>
-<li>Users can Register and Login via email and password.</li>
-<li>Google Login for quicker authentication process.</li>
-<br>
+## 🚀 Core Features
 
-<b>Collect coupons</b>
-<li>Users will see coupons information in the home page, if sale is on of these Brands</li>
-<li>Users can also view stores, Where sale is off in the home page.</li>
-<li>Only logged in user can view brand details. They can browse available coupons for different brands and they can copy coupon codes with a single click.</li>
-<br>
+### ✅ User Authentication
+- **Register & Login** with email and password.
+- **Google Authentication** for quick access.
 
-<b>User Profile</b>
-<li>Displays user information includes: User Photo, User Name and User Email.</li>
-<li>These are retrieved via firebase authentication.</li>
-<li>Allows users to update their profile details and possibly reset their password.</li>
-<hr>
+### ✅ Collect Coupons
+- View **active discounts** on the homepage.
+- **Stores with no discounts** are also displayed separately.
+- **Logged-in users** can view brand details and copy coupon codes with a single click.
 
-# Installation
+### ✅ User Profile
+- Displays **User Photo, Name, and Email**.
+- **Firebase Authentication** manages user sessions.
+- Users can **update profile details** and reset passwords.
 
-<li>Open terminal (cmd or bash) and go to local folder where this repository's file is exist then run this command line <b>npm install.</b>Then all dependencies will install through this command.</li>
-<hr>
+---
 
-# Create Local File
+## 📦 Used Dependencies
 
-<li>Add <b>.env.local</b> file then add secret keys with values or URLs</li>
-<hr>
-
-# Dependencies
-
+```json
 "dependencies": {
-    <br>
-    "animate.css": "^4.1.1",
-    <br>
-    "firebase": "^11.0.2",
-    <br>
-    "localforage": "^1.10.0",
-    <br>
-    "match-sorter": "^8.0.0",
-    <br>
-    "react": "^18.3.1",
-    <br>
-    "react-copy-to-clipboard": "^5.1.0",
-    <br>
-    "react-dom": "^18.3.1",
-    <br>
-    "react-fast-marquee": "^1.6.5",
-    <br>
-    "react-icons": "^5.3.0",
-    <br>
-    "react-rating-stars-component": "^2.2.0",
-    <br>
-    "react-router-dom": "^6.28.0",
-    <br>
-    "react-toastify": "^10.0.6",
-    <br>
-    "sort-by": "^1.2.0",
-    <br>
-    "swiper": "^11.1.15"
-    <br>
-  },
-  <hr>
+  "animate.css": "^4.1.1",
+  "firebase": "^11.0.2",
+  "localforage": "^1.10.0",
+  "match-sorter": "^8.0.0",
+  "react": "^18.3.1",
+  "react-copy-to-clipboard": "^5.1.0",
+  "react-dom": "^18.3.1",
+  "react-fast-marquee": "^1.6.5",
+  "react-icons": "^5.3.0",
+  "react-rating-stars-component": "^2.2.0",
+  "react-router-dom": "^6.28.0",
+  "react-toastify": "^10.0.6",
+  "sort-by": "^1.2.0",
+  "swiper": "^11.1.15"
+}
+```
+---
 
-# Used npm packages in Project
+## 📥 Installation & Setup
 
-<li><b>React Fast Marquee</b></li>
-<b>Explore: </b>https://www.npmjs.com/package/react-fast-marquee
-<br>
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/ssmahim01/discount-pro.git
+cd discount-pro
+```
 
-<li><b>React Toastify</b></li>
-<b>Explore: </b>https://www.npmjs.com/package/react-toastify
-<br>
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
 
-<li><b>React Icons</b></li>
-<b>Explore: </b>https://react-icons.github.io/react-icons/
-<br>
+### 3️⃣ Configure Environment Variables
+Create a `.env.local` file in the root directory and add the secret keys with URLs. 
 
-<li><b>React Rating Stars Component</b></li>
-<b>Explore: </b>https://www.npmjs.com/package/react-rating-stars-component
-<br>
+---
 
-<li><b>Animate.css</b></li>
-<b>Explore: </b>https://animate.style/
-<br>
+## 🏃 Project Run Locally
 
-<li><b>React Copy To Clipboard</b></li>
-<b>Explore: </b>https://www.npmjs.com/package/react-copy-to-clipboard
-<br>
+To start the project locally, run:
 
-<li><b>Swiper JS</b></li>
-<b>Explore: </b>https://swiperjs.com/
-<hr>
+```sh
+npm run dev
+```
 
-# Setup
+🔹 This will start the development server, and you can access it at:  
+📌 **`http://localhost:5173`**  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
+
+## 🌍 Live Demo
+
+🔗 **[Discount PRO - Live Site](https://discount-pro-market.web.app/)**  
+
+---
+
+## 📦 Used NPM Packages
+
+| Package | Description | Link |
+|---------|------------|------|
+| **React Fast Marquee** | Smooth scrolling marquee effect | [🔗 npm](https://www.npmjs.com/package/react-fast-marquee) |
+| **React Toastify** | Notifications for user feedback | [🔗 npm](https://www.npmjs.com/package/react-toastify) |
+| **React Icons** | A collection of customizable icons | [🔗 React Icons](https://react-icons.github.io/react-icons/) |
+| **React Rating Stars** | Star rating component | [🔗 npm](https://www.npmjs.com/package/react-rating-stars-component) |
+| **Animate.css** | CSS animations library | [🔗 Animate.css](https://animate.style/) |
+| **React Copy To Clipboard** | Allows users to copy text with one click | [🔗 npm](https://www.npmjs.com/package/react-copy-to-clipboard) |
+| **Swiper JS** | Modern slider component | [🔗 SwiperJS](https://swiperjs.com/) |
+
+---
+
+## ⚙️ Setup
+
+This template provides a minimal setup to get **React** working with **Vite** along with **ESLint rules**.
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh.
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh.
