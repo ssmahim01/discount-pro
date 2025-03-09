@@ -49,7 +49,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="bg-base-100 navbar fixed z-10 w-full py-4 lg:px-24 border-b border-gray-200 shadow-md">
+    <div className="bg-base-200 navbar fixed z-10 w-full py-2 lg:px-24 border-b border-gray-200 shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden border-2 border-gray-200 shadow-sm mr-3">
@@ -115,7 +115,7 @@ const Navbar = () => {
           </div>
         ) : (
           <>
-            <button className="btn bg-lime-500 px-5 text-white font-bold">
+            <button className="btn btn-outline text-base border-2 hover:bg-green-500 hover:border-none px-5 text-success hover:text-white font-bold">
               <Link to="/authentication/login">Login</Link>
             </button>
             <button className="btn bg-fuchsia-500 px-4 text-white font-bold ml-2">
