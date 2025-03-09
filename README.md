@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" height="340" src="https://github.com/ssmahim01/discount-pro/blob/main/public/discount-pro-bg.png"  />
+  <img width="100%" height="340" src="https://github.com/ssmahim01/discount-pro/blob/main/public/discount-pro-platform.png"  />
 </div>
 
 # 🛍️ Discount PRO
